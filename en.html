@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanish — Connect. Express. Vanish.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        vanishBg: '#000000',
+                        vanishCard: '#0D0D0D',
+                        vanishPrimary: '#00FF66',
+                        vanishSecondary: '#B026FF',
+                        vanishText: '#E0E0E0',
+                        vanishMuted: '#888888',
+                        vanishBorder: '#1A1A1A'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #000000; color: #E0E0E0; font-family: ui-sans-serif, system-ui, sans-serif; scroll-behavior: smooth; }
+        .glow-primary { text-shadow: 0 0 15px rgba(0, 255, 102, 0.4); }
+        .glow-box { box-shadow: 0 0 25px rgba(0, 255, 102, 0.15); }
+        .glow-btn { box-shadow: 0 0 20px rgba(0, 255, 102, 0.35); }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-vanishPrimary selection:text-black">
+
+    <header class="border-b border-vanishBorder bg-vanishCard/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="text-2xl font-black text-vanishPrimary tracking-wider glow-primary">VANISH</span>
+                <span class="text-xs px-2 py-0.5 rounded bg-vanishPrimary/10 text-vanishPrimary border border-vanishPrimary/30 font-bold">v1.0</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-vanishMuted">
+                <a href="#features" class="hover:text-vanishPrimary transition">Features</a>
+                <a href="#install" class="hover:text-vanishPrimary transition">Installation</a>
+                <a href="#download" class="hover:text-vanishPrimary transition">Download</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <!-- Botón para volver a la versión en Español -->
+                <a href="index.html" class="text-xs font-bold text-vanishMuted hover:text-white transition border border-vanishBorder px-2 py-1 rounded bg-vanishBg">🌍 ES</a>
+                
+                <a href="#download" class="hidden sm:inline-block bg-vanishPrimary text-black font-extrabold text-xs px-5 py-2.5 rounded-lg hover:opacity-90 transition glow-btn uppercase tracking-wider">
+                    Get APK
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section class="max-w-5xl mx-auto px-6 pt-24 pb-20 text-center">
+            <div class="inline-block mb-4 px-4 py-1.5 rounded-full bg-vanishSecondary/10 border border-vanishSecondary/30 text-vanishSecondary text-xs font-bold tracking-widest uppercase">
+                Decentralized & Ephemeral Network
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black text-white tracking-tight mb-6">
+                Connect. Express. <span class="text-vanishPrimary glow-primary">Vanish.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-vanishMuted max-w-2xl mx-auto mb-10 leading-relaxed">
+                A log-free platform, with no user servers and atomic self-destruction. Your words and negotiations leave no digital footprint.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://github.com/isaias1221/vanish-oficial/releases/download/v1.0/Vanish.1.0.final.apk" class="bg-vanishPrimary text-black font-black px-8 py-4 rounded-xl hover:opacity-90 transition glow-btn text-base flex items-center justify-center">
+                    ⬇️ Download Vanish v1.0
+                </a>
+                <a href="#install" class="bg-vanishCard border border-vanishBorder text-vanishText font-bold px-8 py-4 rounded-xl hover:border-vanishPrimary/50 transition text-base flex items-center justify-center">
+                    How to Install
+                </a>
+            </div>
+            <p class="text-xs text-vanishMuted mt-4">Requires Android 8.0+ • 100% Free</p>
+        </section>
+
+        <section id="install" class="py-24 max-w-5xl mx-auto px-6 border-t border-vanishBorder">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-black text-white tracking-tight mb-3">Secure Installation Guide</h2>
+                <p class="text-vanishMuted text-sm">Steps to bypass the Google Play Protect block.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="bg-vanishCard border border-vanishBorder p-8 rounded-2xl relative glow-box">
+                    <div class="absolute -top-4 -left-4 bg-vanishSecondary text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">IMPORTANT</div>
+                    <p class="text-vanishMuted text-sm leading-relaxed mb-4">
+                        Vanish is a decentralized application focused on extreme privacy. <strong>It is not available on the Google Play Store</strong> to ensure no corporation tracks its downloads, censors it, or links its usage to your personal Google account.
+                    </p>
+                    <p class="text-vanishMuted text-sm leading-relaxed">
+                        Due to this technical independence, your phone will show a <strong>Google Play Protect</strong> alert warning that it's an "unknown" app. This is a standard Android mechanism for any external APK file.
+                    </p>
+                </div>
+                <div class="space-y-6 pl-0 md:pl-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-vanishBorder text-white font-bold w-8 h-8 rounded-full flex items-center justify-center shrink-0">1</div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm mb-1">Open Google Play Store</h4>
+                            <p class="text-vanishMuted text-xs">Open the official store and tap your profile picture in the top right corner.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-vanishBorder text-white font-bold w-8 h-8 rounded-full flex items-center justify-center shrink-0">2</div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm mb-1">Go to "Play Protect"</h4>
+                            <p class="text-vanishMuted text-xs">Select Play Protect in the menu and then tap the gear icon (⚙️) at the top right.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-vanishBorder text-white font-bold w-8 h-8 rounded-full flex items-center justify-center shrink-0">3</div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm mb-1">Disable scanning</h4>
+                            <p class="text-vanishMuted text-xs">Turn off the first option that says "Scan apps with Play Protect".</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-vanishPrimary text-black font-bold w-8 h-8 rounded-full flex items-center justify-center shrink-0 glow-btn">4</div>
+                        <div>
+                            <h4 class="text-vanishPrimary font-bold text-sm mb-1">Install the Vanish APK</h4>
+                            <p class="text-vanishMuted text-xs">Open the downloaded Vanish.1.0.final.apk file and install it. Done! You can turn Play Protect back on if you wish.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="border-t border-vanishBorder bg-vanishCard/40 py-24">
+            <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+                <div class="bg-vanishCard border border-vanishBorder p-8 rounded-2xl glow-box">
+                    <div class="text-3xl mb-4">🧬</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Radical Anonymity</h3>
+                    <p class="text-vanishMuted text-sm">Upon entering, you are born as an anonymous Legionary. No emails, no passwords, and no phone numbers required.</p>
+                </div>
+                <div class="bg-vanishCard border border-vanishBorder p-8 rounded-2xl glow-box">
+                    <div class="text-3xl mb-4">⏳</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Atomic Self-Destruction</h3>
+                    <p class="text-vanishMuted text-sm">Each post has a timer. When it reaches zero, the content and chats are permanently purged from the network.</p>
+                </div>
+                <div class="bg-vanishCard border border-vanishBorder p-8 rounded-2xl glow-box">
+                    <div class="text-3xl mb-4">🛒</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Negotiation Tunnels</h3>
+                    <p class="text-vanishMuted text-sm">Negotiate in encrypted private chats directly with buyers. Includes real-time stock control.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="py-24 max-w-4xl mx-auto px-6 text-center border-t border-vanishBorder">
+            <div class="bg-vanishCard border border-vanishPrimary/30 p-12 rounded-3xl glow-box">
+                <span class="text-4xl mb-4 block">📦</span>
+                <h2 class="text-3xl font-black text-white mb-3">Direct Installation</h2>
+                <p class="text-vanishMuted text-sm max-w-xl mx-auto mb-8">
+                    Download the APK file directly to your Android device and install it following our guide.
+                </p>
+                
+                <a href="https://github.com/isaias1221/vanish-oficial/releases/download/v1.0/Vanish.1.0.final.apk" class="inline-block bg-vanishPrimary text-black font-black px-10 py-4 rounded-xl hover:opacity-90 transition glow-btn text-lg uppercase tracking-wider">
+                    Download Official APK (.apk)
+                </a>
+                
+                <p class="text-xs text-vanishMuted mt-8">
+                    Technical support and vulnerability reporting:<br>
+                    <strong class="text-vanishSecondary">Legion.support.vanish@proton.me</strong>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-vanishBorder bg-vanishCard py-8 text-center text-xs text-vanishMuted">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>© 2026 Vanish Protocol. Open Source.</p>
+            <p class="text-vanishPrimary font-bold">We are Legion.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
