@@ -42,6 +42,7 @@
                 <a href="#features" class="hover:text-vanishPrimary transition">Características</a>
                 <a href="#install" class="hover:text-vanishPrimary transition">Instalación</a>
                 <a href="#manual" class="hover:text-vanishPrimary transition">Manual</a>
+                <a href="#faq" class="hover:text-vanishPrimary transition">FAQ</a>
                 <a href="#download" class="hover:text-vanishPrimary transition">Descarga</a>
             </nav>
             <div class="flex items-center space-x-4">
@@ -191,7 +192,52 @@
                 </div>
             </div>
         </section>
-        
+
+        <!-- FASE 4: FAQ Y TERMINAL (HISTORIAL) -->
+        <section id="faq" class="py-24 max-w-6xl mx-auto px-6 border-t border-vanishBorder">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Preguntas Frecuentes -->
+                <div>
+                    <h2 class="text-3xl font-black text-white tracking-tight mb-6">Preguntas Frecuentes</h2>
+                    <div class="space-y-4">
+                        <div class="bg-vanishCard border border-vanishBorder p-5 rounded-xl">
+                            <h4 class="text-vanishPrimary font-bold mb-2">¿Vanish puede leer mis mensajes?</h4>
+                            <p class="text-vanishMuted text-sm">No. La red es descentralizada. Nosotros no almacenamos tu información para análisis ni creamos perfiles.</p>
+                        </div>
+                        <div class="bg-vanishCard border border-vanishBorder p-5 rounded-xl">
+                            <h4 class="text-vanishPrimary font-bold mb-2">¿Qué pasa si borro los datos de la app?</h4>
+                            <p class="text-vanishMuted text-sm">La app utiliza la memoria caché local para guardar tus chats activos y tu identidad. Si borras la caché desde los ajustes de Android, perderás acceso a tus ventas y túneles privados para siempre.</p>
+                        </div>
+                        <div class="bg-vanishCard border border-vanishBorder p-5 rounded-xl">
+                            <h4 class="text-vanishPrimary font-bold mb-2">¿Por qué no piden correo ni contraseña?</h4>
+                            <p class="text-vanishMuted text-sm">Creemos en el anonimato real. Pedir un correo es crear un punto de rastreo forense. En Vanish, eres un fantasma temporal en la red.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Terminal Cyberpunk / Changelog -->
+                <div>
+                    <h2 class="text-3xl font-black text-white tracking-tight mb-6">Registro de Sistema</h2>
+                    <div class="bg-black border border-vanishPrimary/50 p-6 rounded-xl font-mono text-xs text-vanishPrimary glow-box relative overflow-hidden h-full flex flex-col justify-center">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-vanishPrimary/20"></div>
+                        <p class="mb-2 opacity-70">> Inicializando núcleo Vanish...</p>
+                        <p class="mb-2 opacity-70">> Conectando a nodos encriptados... [OK]</p>
+                        <p class="mb-4 opacity-70">> Cargando historial de versiones...</p>
+                        
+                        <div class="border-l-2 border-vanishPrimary pl-4 mb-4">
+                            <strong class="text-white text-sm">v1.0 [RELEASE OFICIAL]</strong>
+                            <p class="text-vanishMuted mt-1">- Lanzamiento global de la red Vanish.</p>
+                            <p class="text-vanishMuted">- Implementación de Túneles Privados de Negociación.</p>
+                            <p class="text-vanishMuted">- Sistema de Autodestrucción Atómica activado.</p>
+                            <p class="text-vanishMuted">- Modo Pánico y Camuflaje 18+ integrados.</p>
+                        </div>
+                        
+                        <p class="animate-pulse">> Esperando nuevos despliegues de la Legión_</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="download" class="py-24 max-w-4xl mx-auto px-6 text-center border-t border-vanishBorder">
             <div class="bg-vanishCard border border-vanishPrimary/30 p-12 rounded-3xl glow-box">
                 <span class="text-4xl mb-4 block">📦</span>
