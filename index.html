@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanish — Conéctate. Exprésate. Desaparece.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        vanishBg: '#000000',
+                        vanishCard: '#0D0D0D',
+                        vanishPrimary: '#00FF66',
+                        vanishSecondary: '#B026FF',
+                        vanishText: '#E0E0E0',
+                        vanishMuted: '#888888',
+                        vanishBorder: '#1A1A1A'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #000000; color: #E0E0E0; font-family: ui-sans-serif, system-ui, sans-serif; }
+        .glow-primary { text-shadow: 0 0 15px rgba(0, 255, 102, 0.4); }
+        .glow-box { box-shadow: 0 0 25px rgba(0, 255, 102, 0.15); }
+        .glow-btn { box-shadow: 0 0 20px rgba(0, 255, 102, 0.35); }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-vanishPrimary selection:text-black">
+
+    <header class="border-b border-vanishBorder bg-vanishCard/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="text-2xl font-black text-vanishPrimary tracking-wider glow-primary">VANISH</span>
+                <span class="text-xs px-2 py-0.5 rounded bg-vanishPrimary/10 text-vanishPrimary border border-vanishPrimary/30 font-bold">v1.0</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-vanishMuted">
+                <a href="#features" class="hover:text-vanishPrimary transition">Características</a>
+                <a href="#download" class="hover:text-vanishPrimary transition">Descarga</a>
+            </nav>
+            <a href="#download" class="bg-vanishPrimary text-black font-extrabold text-xs px-5 py-2.5 rounded-lg hover:opacity-90 transition glow-btn uppercase tracking-wider">
+                Obtener APK
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section class="max-w-5xl mx-auto px-6 pt-24 pb-20 text-center">
+            <div class="inline-block mb-4 px-4 py-1.5 rounded-full bg-vanishSecondary/10 border border-vanishSecondary/30 text-vanishSecondary text-xs font-bold tracking-widest uppercase">
+                Red Descentralizada & Efímera
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black text-white tracking-tight mb-6">
+                Conéctate. Exprésate. <span class="text-vanishPrimary glow-primary">Desaparece.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-vanishMuted max-w-2xl mx-auto mb-10 leading-relaxed">
+                Una plataforma libre de registros, sin servidores de usuarios y con autodestrucción atómica. Tus palabras y negociaciones no dejan rastro digital.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#download" class="bg-vanishPrimary text-black font-black px-8 py-4 rounded-xl hover:opacity-90 transition glow-btn text-base flex items-center justify-center">
+                    ⬇️ Descargar Vanish v1.0
+                </a>
+            </div>
+            <p class="text-xs text-vanishMuted mt-4">Requiere Android 8.0+ • 100% Gratuito</p>
+        </section>
+
+        <section id="features" class="border-t border-vanishBorder bg-vanishCard/40 py-24">
+            <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+                <div class="bg-vanishCard border border-vanishBorder p-8 rounded-2xl glow-box">
+                    <div class="text-3xl mb-4">🧬</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Anonimato Radical</h3>
+                    <p class="text-vanishMuted text-sm">Al entrar naces como un Legionario anónimo. Sin correos, sin números de teléfono.</p>
+                </div>
+                <div class="bg-vanishCard border border-vanishBorder p-8 rounded-2xl glow-box">
+                    <div class="text-3xl mb-4">⏳</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Autodestrucción Atómica</h3>
+                    <p class="text-vanishMuted text-sm">Cada post tiene un temporizador. Al llegar a cero, el contenido y los chats se purgan para siempre.</p>
+                </div>
+                <div class="bg-vanishCard border border-vanishBorder p-8 rounded-2xl glow-box">
+                    <div class="text-3xl mb-4">🛒</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Túneles de Negociación</h3>
+                    <p class="text-vanishMuted text-sm">Negocia en chats privados encriptados directamente con los compradores y control de stock.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="py-24 max-w-4xl mx-auto px-6 text-center">
+            <div class="bg-vanishCard border border-vanishPrimary/30 p-12 rounded-3xl glow-box">
+                <span class="text-4xl mb-4 block">📦</span>
+                <h2 class="text-3xl font-black text-white mb-3">Instalación Directa</h2>
+                <p class="text-vanishMuted text-sm max-w-xl mx-auto mb-8">
+                    Descarga el archivo APK directamente en tu dispositivo Android e instálalo de forma libre y segura.
+                </p>
+                
+                <!-- ¡ATENCIÓN DIRECTOR! PEGA TU ENLACE AQUÍ ABAJO -->
+                <a href="https://github.com/isaias1221/vanish-oficial/releases/download/v1.0/Vanish.1.0.final.apk" class="inline-block bg-vanishPrimary text-black font-black px-10 py-4 rounded-xl hover:opacity-90 transition glow-btn text-lg uppercase tracking-wider">
+                    Descargar APK Oficial (.apk)
+                </a>
+                
+                <p class="text-xs text-vanishMuted mt-8">
+                    Soporte técnico y reporte de vulnerabilidades:<br>
+                    <strong class="text-vanishSecondary">Legion.support.vanish@proton.me</strong>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-vanishBorder bg-vanishCard py-8 text-center text-xs text-vanishMuted">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>© 2026 Vanish Protocol. Código Abierto.</p>
+            <p class="text-vanishPrimary font-bold">Somos Legión.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
